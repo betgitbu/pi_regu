@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingreso - Unidos Contra el Cáncer</title>
+  <link rel="stylesheet" href="/CSS/login.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="nav-logo">Unidos Contra el Cáncer</div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/HTML/sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="/HTML/login.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor del login -->
+  <div class="login-container">
+    <h2>Unidos Contra el Cáncer</h2>
+    <form onsubmit="return validarLogin()">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="clave">Contraseña</label>
+      <div class="password-wrapper">
+        <input type="password" id="clave" name="clave" required minlength="8">
+        <button type="button" onclick="mostrarClave()" class="ver-btn">👁</button>
+      </div>
+
+      <small>Mínimo 8 caracteres y 1 carácter especial</small>
+
+      <button type="submit">Ingresar</button>
+      <p id="mensaje-error"></p>
+    </form>
+  </div>
+
+  <!-- Script de validación -->
+  <script>
+    function validarLogin() {
+      const usuario = document.getElementById('usuario').value;
+      const clave = document.getElementById('clave').value;
+      const mensajeError = document.getElementById('mensaje-error');
+
+      if (usuario === '' || clave === '') {
+        mensajeError.textContent = 'Por favor, completa todos los campos.';
+        return false;
+      }
+
+      mensajeError.textContent = '';
+      alert('Ingreso exitoso');
+      return true;
+    }
+
+    function mostrarClave() {
+      const claveInput = document.getElementById('clave');
+      claveInput.type = claveInput.type === 'password' ? 'text' : 'password';
+    }
+  </script>
+
+</body>
+</html>
