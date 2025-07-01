@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidos Contra el Cáncer</title>
+  <link rel="stylesheet" href="../CSS/pagina_principal.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">Unidos Contra el Cáncer</div>
+    <ul class="nav-links">
+      <li><a href="javascript:void(0)" onclick="mostrarInicio()">Inicio</a></li>
+      <li><a href="javascript:void(0)" onclick="mostrarNosotros()">Sobre Nosotros</a></li>
+      <li><a href="/HTML/login.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>💖 Unidos Contra el Cáncer</h1>
+  </header>
+
+  <!-- SECCIÓN: SOBRE NOSOTROS -->
+  <section id="sobre-nosotros" style="display: none;">
+    <h2>Conoce a nuestro equipo</h2>
+    <div class="integrantes">
+      <div class="card-integrante">
+        <img src="../img/ayramm.jpg" alt="Ayaramm">
+        <h3>Ayramm</h3>
+        <p>Programadora página inicial</p>
+      </div>
+      <div class="card-integrante">
+        <img src="../img/bella.jpg" alt="Bella">
+        <h3>Bella</h3>
+        <p>Programadora página principal</p>
+      </div>
+      <div class="card-integrante">
+        <img src="../img/marlenen.jpg" alt="Marlenen">
+        <h3>Marlene</h3>
+        <p>Programadora página principal</p>
+      </div>
+      <div class="card-integrante">
+        <img src="../img/samuell.jpg" alt="Samuell">
+        <h3>Samuell</h3>
+        <p>Programador index</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: CARRUSEL -->
+  <div id="carrusel-container" class="carrusel-container">
+    <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">&#10094;</button>
+
+    <main class="carrusel" id="carrusel">
+      <a href="noticia1.html" class="card card-info">
+        <h2>🎗 Cáncer de mama</h2>
+        <img src="../img/cancer-mama.jpg" alt="Cáncer de mama" class="mini-img" />
+      </a>
+      <a href="noticia2.html" class="card card-info">
+        <h2>🎗 Cáncer de próstata</h2>
+        <img src="../img/cancer-prostata.jpg" alt="Cáncer de próstata" class="mini-img" />
+      </a>
+      <a href="noticia3.html" class="card card-info">
+        <h2>🎗 Cáncer de piel</h2>
+        <img src="../img/cancer-piel.jpg" alt="Cáncer de piel" class="mini-img" />
+      </a>
+      <a href="noticia4.html" class="card card-info">
+        <h2>🎗 Cáncer de pulmón</h2>
+        <img src="../img/cancer-pulmon.jpg" alt="Cáncer de pulmón" class="mini-img" />
+      </a>
+      <a href="noticia5.html" class="card card-info">
+        <h2>🎗 Leucemia</h2>
+        <img src="../img/leucemia.jpg" alt="Leucemia" class="mini-img" />
+      </a>
+    </main>
+
+    <button class="carrusel-btn next" onclick="moverCarrusel(1)">&#10095;</button>
+  </div>
+
+  <script>
+    function moverCarrusel(direccion) {
+      const carrusel = document.getElementById("carrusel");
+      const tarjeta = carrusel.querySelector(".card");
+      const scrollCantidad = tarjeta.offsetWidth + 20;
+      carrusel.scrollBy({
+        left: direccion * scrollCantidad,
+        behavior: 'smooth'
+      });
+    }
+
+    function mostrarNosotros() {
+      document.getElementById("sobre-nosotros").style.display = "block";
+      document.getElementById("carrusel-container").style.display = "none";
+    }
+
+    function mostrarInicio() {
+      document.getElementById("sobre-nosotros").style.display = "none";
+      document.getElementById("carrusel-container").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,210 @@
+git branch -m beth-funciones
+/* Reinicia márgenes y asegura que los tamaños sean consistentes */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo general del cuerpo: tipografía, fondo degradado y centrado de contenido */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffe0ec, #fad0c4); /* degradado rosado */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal del formulario */
+.login-container {
+  background: #fff; /* fondo blanco */
+  padding: 40px 30px; /* espacio interno */
+  border-radius: 20px; /* bordes redondeados */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* sombra suave */
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Título del login */
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #d81b60; /* rosa fuerte */
+  font-size: 1.8em;
+}
+
+/* Etiquetas de los campos */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+/* Campos de entrada: usuario y contraseña */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  transition: border 0.3s ease;
+}
+
+/* Cambio de color del borde cuando el campo está enfocado */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #d81b60;
+  outline: none;
+}
+
+/* Contenedor especial para el input de contraseña y el botón de mostrar */
+.password-wrapper {
+  position: relative; /* necesario para posicionar el botón dentro */
+}
+
+/* Campo de contraseña con espacio adicional a la derecha para el ícono 👁 */
+.password-wrapper input {
+  padding-right: 40px;
+}
+
+/* Botón 👁 para mostrar/ocultar contraseña */
+.ver-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%); /* centra verticalmente */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #555;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Texto pequeño debajo del campo (indicaciones de seguridad) */
+small {
+  display: block;
+  text-align: left;
+  color: #888;
+  font-size: 0.85em;
+  margin-bottom: 15px;
+}
+
+/* Botón de ingreso (submit) */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #d81b60; /* rosa principal */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Efecto hover del botón de ingreso */
+button[type="submit"]:hover {
+  background-color: #b7154c; /* un poco más oscuro al pasar el mouse */
+}
+
+/* Mensaje de error para validaciones */
+#mensaje-error {
+  color: #d32f2f; /* rojo para errores */
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/*samuel*/
+
+/* Contenedor del formulario */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Inputs generales */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #b86d6d;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Contenedor de contraseña y botón del ojo */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Input de contraseña con espacio para el botón 👁 */
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Botón del ojo */
+.ver-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #c65757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b9517b;
+}
+
+/* Mensaje de error */
+#mensaje-error {
+  color: rgb(255, 0, 0);
+  margin-top: 10px;
+}
+
+/* Texto pequeño */
+small {
+  display: block;
+  margin-bottom: 15px;
+  color: #000000;
+}
+/* bella */
