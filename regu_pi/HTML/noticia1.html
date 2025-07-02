@@ -2,16 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Cáncer de Mama</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Cáncer de mama</title>
+  <link rel="stylesheet" href="../CSS/pagina_principal.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #fff0f5; color: #333; }
+    .noticia-container { max-width: 800px; margin: auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    .noticia-container img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; }
+    h1 { color: #d63384; }
+    a.volver { display: inline-block; margin-top: 30px; text-decoration: none; color: #d63384; font-weight: bold; }
+    a.volver:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-  <div class="container mt-4 d-flex align-items-start">
-    <img src="img/cancer-mama.jpg" alt="Cáncer de mama" class="img-fluid me-4" style="max-width: 300px; border-radius: 10px;">
-    <div>
-      <h2>Cáncer de mama</h2>
-      <p>El cáncer de mama afecta principalmente a mujeres, aunque también puede darse en hombres. La detección temprana mediante mamografías es clave para mejorar significativamente las probabilidades de curación.</p>
-    </div>
+  <div class="noticia-container">
+    <img src="../img/cancer-mama.jpg" alt="Cáncer de mama">
+    <h1>🎗 Cáncer de mama</h1>
+    <p>El cáncer de mama afecta principalmente a mujeres, aunque también puede darse en hombres. La detección temprana mediante mamografías es clave para mejorar significativamente las probabilidades de curación.</p>
+    <a class="volver" href="pagina principal.html">← Volver a la página principal</a>
   </div>
 </body>
 </html>
