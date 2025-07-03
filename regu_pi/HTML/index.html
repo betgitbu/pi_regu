@@ -4,9 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ingreso - Unidos Contra el Cáncer</title>
+
   <link rel="stylesheet" href="../CSS/login.css" />
 </head>
 <body>
+  
+  <link rel="stylesheet" href="/regu_pi/CSS/login.css">
+</head>
+<body>
+
+  <!-- Botón de traducción (menú desplegable de Google Translate) -->
+  <div id="google_translate_element" style="text-align: right; padding: 10px;"></div>
+
   <!-- Contenedor del login -->
   <div class="login-container">
     <h2>Unidos Contra el Cáncer</h2>
@@ -49,6 +58,18 @@
       claveInput.type = claveInput.type === 'password' ? 'text' : 'password';
     }
   </script>
+
+  <!-- Script de Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'en,es,fr,pt,it,de',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
