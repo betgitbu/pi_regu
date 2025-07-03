@@ -9,12 +9,17 @@ git branch -m beth-funciones
 /* Estilo general del cuerpo: tipografía, fondo degradado y centrado de contenido */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #ffe0ec, #fad0c4); /* degradado rosado */
+  background-image: url('../img/imagenesfondo.jpg'); /* ruta relativa a la imagen */
+  background-size: cover;         /* ajusta la imagen al tamaño de la pantalla */
+  background-position: center;    /* centra la imagen */
+  background-repeat: no-repeat;   /* no repetir la imagen */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 
 /* Contenedor principal del formulario */
 .login-container {
@@ -126,8 +131,6 @@ button[type="submit"]:hover {
   margin-top: 10px;
   font-size: 0.9em;
 }
-
-/*samuel*/
 
 /* Contenedor del formulario */
 .login-container {

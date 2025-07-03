@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Unidos Contra el Cáncer</title>
   <link rel="stylesheet" href="../CSS/pagina_principal.css" />
+
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-logo">Unidos Contra el Cáncer</div>
-    <ul class="nav-links">
-      <li><a href="javascript:void(0)" onclick="mostrarInicio()">Inicio</a></li>
-      <li><a href="javascript:void(0)" onclick="mostrarNosotros()">Sobre Nosotros</a></li>
-      <li><a href="/HTML/login.html">Iniciar Sesión</a></li>
-    </ul>
-  </nav>
+
+
+<nav class="navbar">
+  <div class="nav-logo">Unidos Contra el Cáncer</div>
+  <ul class="nav-links">
+    <li><a href="javascript:void(0)" onclick="mostrarInicio()">Inicio</a></li>
+    <li><a href="javascript:void(0)" onclick="mostrarNosotros()">Sobre Nosotros</a></li>
+    <li><a href="javascript:void(0)" onclick="mostrarCerrarSesion()">Cerrar sesión</a></li>
+    <li><a href="javascript:void(0)" onclick="mostrarindex()">Iniciar Sesión</a></li>
+  </ul>
+</nav>
+
 
   <!-- ENCABEZADO -->
   <header>
@@ -31,7 +36,7 @@
       <div class="card-integrante">
         <img src="../img/ayramm.jpg" alt="Ayaramm">
         <h3>Ayramm</h3>
-        <p>Programadora página inicial</p>
+        <p>programadora</p>
       </div>
       <div class="card-integrante">
         <img src="../img/bella.jpg" alt="Bella">
@@ -103,6 +108,25 @@
       document.getElementById("carrusel-container").style.display = "block";
     }
   </script>
+<!-- encabezado -->
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>concepto</h2>
+      <p>© 2025-2025 esta pagina fue creada solo con fines educativos</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#">contacto</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos de uso</a>
+    </nav>
+  </div>
+  <hr />
+  <div class="footer-copy">
+    <p>Una publicación de <strong>Equipo FIEsta</strong></p>
+  </div>
+</footer>
 
 </body>
 </html>
