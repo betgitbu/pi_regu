@@ -170,3 +170,47 @@ body {
 .nav-links li a:hover {
   color: #ffd1dc;
 }
+/* Estilos del pie de página */
+footer {
+  background-color: #c97bb7; /* Naranja */
+  color: #fff;
+  padding: 40px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left h2 {
+  margin: 0;
+}
+
+.footer-left p {
+  margin: 5px 0 0 0;
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #fff;
+  margin: 20px 0;
+}
+
+.creditos {
+  text-align: center;
+  margin: 0;
+}
